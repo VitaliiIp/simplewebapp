@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Lingvex</title>
+  <meta name="description" content="Get in touch with Lingvex — request a quote, ask a question, or start a new project." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand">Ling<span>vex</span></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About us</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <nav class="breadcrumb"><a href="index.html">Home</a> / Contact</nav>
+  </div>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Get in Touch</h1>
+        <p>Tell us about your project. We'll get back to you with a tailored quote within one business day.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p><strong>Address</strong><br />International House, 38 Thistle Street<br />Edinburgh, Scotland, EH2 1EN</p>
+            <p><strong>Phone</strong><br />+44 7354 803160</p>
+            <p><strong>Email</strong><br />hello@lingvex.example</p>
+            <p><strong>Company</strong><br />LANGIFY SOLUTIONS LTD, SC874813</p>
+            <p><strong>Hours</strong><br />Monday – Friday, 09:00 – 18:00 GMT</p>
+          </div>
+
+          <form aria-label="Contact form" onsubmit="event.preventDefault(); this.querySelector('.form-status').hidden = false;">
+            <div class="field">
+              <label for="name">Your name</label>
+              <input id="name" name="name" type="text" required autocomplete="name" />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required autocomplete="email" />
+            </div>
+            <div class="field">
+              <label for="service">Service</label>
+              <select id="service" name="service" required>
+                <option value="">Select a service…</option>
+                <option>Translation</option>
+                <option>Interpreting</option>
+                <option>Localization</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="message">Project details</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send message</button>
+            <p class="form-status" hidden style="margin-top: var(--space-2); color: var(--color-primary);">Thanks — we'll be in touch shortly.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Lingvex</h4>
+          <p>Professional translation and localization for businesses worldwide.</p>
+        </div>
+        <div>
+          <h4>Information</h4>
+          <ul>
+            <li><a href="about-us.html">About us</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contacts</h4>
+          <ul>
+            <li>International House, 38 Thistle Street, Edinburgh, Scotland, EH2 1EN</li>
+            <li>+44 7354 803160</li>
+            <li>LANGIFY SOLUTIONS LTD, SC874813</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 Lingvex. All Rights Reserved.</div>
+    </div>
+  </footer>
+</body>
+</html>
